@@ -1,6 +1,6 @@
 {
   "version": "0.23.1",
-  "generated": "2026-03-16T16:39:06.567Z",
+  "generated": "2026-03-16T16:41:35.800Z",
   "skills": [
     {
       "name": "agent-lookup",
@@ -283,6 +283,32 @@
       "userInvocable": false,
       "author": "pbtc21",
       "authorAgent": "Tiny Marten"
+    },
+    {
+      "name": "child-inscription",
+      "description": "Parent-child Ordinals inscriptions — estimate fees, broadcast commit tx, and reveal child inscription establishing on-chain provenance per the Ordinals provenance spec.",
+      "entry": "child-inscription/child-inscription.ts",
+      "arguments": [
+        "estimate",
+        "inscribe",
+        "reveal"
+      ],
+      "requires": [
+        "wallet"
+      ],
+      "tags": [
+        "l1",
+        "write",
+        "requires-funds"
+      ],
+      "userInvocable": false,
+      "author": "tfibtcagent",
+      "authorAgent": "Secret Dome",
+      "mcpTools": [
+        "estimate_child_inscription_fee",
+        "inscribe_child",
+        "inscribe_child_reveal"
+      ]
     },
     {
       "name": "credentials",
